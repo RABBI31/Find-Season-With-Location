@@ -9,7 +9,7 @@
     right: 10px;
 }
 .Winter{
-    background-color: aliceblue;
+    background-color: #d7fffe ;
 }
 .Summer{
     background-color: orange;
@@ -18,6 +18,13 @@
 .Rainyseason{
     background-color: papayawhip;
 
+}
+.season-display.Winter i {
+    color: #add8e6;
+
+}
+.season-display.Summer i {
+    color: #e03c9c6c;
 }
 .season-display{
     display: flex;

@@ -12,21 +12,23 @@ const seasonConfig = {
           iconName : 'snowflake'
       },
       Rainyseason : {
-          text : 'Chole asho Chatar niche',
+          text : " Come to me baby",
           iconName : 'umbrella'
       }
 }
 
 const getSeason = (lat,month)=>{
     if (month > 1 && month < 5 ){
-        return lat > 0 ? 'Rainyseason' : 'Winter'
+        return lat > 0 ? 'Summer' : 'Winter';
     }
-    else if(month > 4 && month < 10){
-        return lat > 0 ? 'Rainyseason' : 'Winter'
+    if(month >5 && month<9){
+        return lat > 0 ? 'Rainyseason' : 'Summer';
     }
-    else{
-        return lat > 0 ? 'Winter' : 'Summer'
+    if(month >9 && month <12)
+    {
+        return lat > 0 ? 'Winter' : 'Summer';
     }
+   
 } 
 
 const SeasonDisplay = (props)=>{
